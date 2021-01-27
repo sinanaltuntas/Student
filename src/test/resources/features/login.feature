@@ -1,5 +1,5 @@
 Feature: Login
-  @Wip
+
 
   Scenario: User able to login
     Given user opens the login page

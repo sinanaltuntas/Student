@@ -31,7 +31,4 @@ public class LoginPage extends BasePage{
     @FindBy(css = "[name='login-password']")
     public WebElement password;
 
-
-
-
 }

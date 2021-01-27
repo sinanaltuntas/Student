@@ -37,10 +37,10 @@ public class LoginStepDefinitions {
 
         Actions hover = new Actions(MyDriver.getdriver());
         hover.moveToElement(loginPage.loginDropdown).perform();
-        Thread.sleep(5000);
+        Thread.sleep(3000);
 
         loginPage.loginButton.click();
-        Thread.sleep(5000);
+        Thread.sleep(2000);
 
 
     }
@@ -55,7 +55,7 @@ public class LoginStepDefinitions {
 
         loginPage.email.sendKeys(username);
         loginPage.password.sendKeys(password, Keys.ENTER);
-        Thread.sleep(5000);
+        Thread.sleep(3000);
 
     }
 

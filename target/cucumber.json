@@ -3,20 +3,18 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-12-26T15:58:01.966Z",
-        "line": 4,
-        "name": "User able to login",
+        "line": 3,
+        "name": "",
         "description": "",
-        "id": "login;user-able-to-login",
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 18393599000,
+              "duration": 9596622000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 4,
             "name": "user opens the login page",
             "match": {
               "location": "trendyol.stepdefinitions.LoginStepDefinitions.use_opens_the_login_page()"
@@ -25,10 +23,10 @@
           },
           {
             "result": {
-              "duration": 17898360000,
+              "duration": 11698558000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 5,
             "name": "he enters the credentials",
             "match": {
               "location": "trendyol.stepdefinitions.LoginStepDefinitions.he_enters_the_credentials()"
@@ -37,15 +35,114 @@
           },
           {
             "result": {
-              "duration": 5533413000,
+              "duration": 3317191000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 6,
             "name": "able to login",
             "match": {
               "location": "trendyol.stepdefinitions.LoginStepDefinitions.able_to_login()"
             },
             "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-27T11:25:04.253Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2702176000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "trendyol.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Searching computer",
+        "description": "",
+        "id": "main;searching-computer",
+        "after": [
+          {
+            "result": {
+              "duration": 225473000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "trendyol.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5086797000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Go to searchbar",
+            "match": {
+              "location": "trendyol.stepdefinitions.MainStepDefinitions.go_to_searchbar()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1864495000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Write \"bilgisayar\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"bilgisayar\"",
+                  "offset": 6
+                }
+              ],
+              "location": "trendyol.stepdefinitions.MainStepDefinitions.write(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 57000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User should see product list page",
+            "match": {
+              "location": "trendyol.stepdefinitions.MainStepDefinitions.user_should_see_product_list_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5551453000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Select any product",
+            "match": {
+              "location": "trendyol.stepdefinitions.ProductListStepDefinitions.select_any_product()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4332398000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User click Add to Basket",
+            "match": {
+              "location": "trendyol.stepdefinitions.ProductDetailStepDefinitions.user_click_Add_to_Basket()"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
@@ -55,11 +152,11 @@
         ]
       }
     ],
-    "name": "Login",
+    "name": "Main",
     "description": "",
-    "id": "login",
+    "id": "main",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/login.feature",
+    "uri": "file:src/test/resources/features/main.feature",
     "tags": []
   }
 ]
